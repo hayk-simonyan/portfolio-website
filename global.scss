@@ -1,0 +1,66 @@
+@use 'theme' as *;
+
+body {
+    font-family: "Fira Code", monospace;
+    margin: 0;
+    background-color: $background-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $white-color;
+}
+
+p {
+    color: $gray-color;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+ul {
+    list-style: none;
+}
+
+%button-base {
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    color: $white-color;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+button {
+    @extend %button-base;
+
+    &.success {
+        border: 1px solid green;
+    }
+
+    &.warning {
+        border: 1px solid orangered;
+    }
+}
+
+button:hover {
+    background-color: $primary-color;
+
+    &.success {
+        background-color: greenyellow;
+    }
+
+    &.warning {
+        background-color: orange;
+    }
+}
+
+a {
+    color: $white-color;
+    text-decoration: none;
+}

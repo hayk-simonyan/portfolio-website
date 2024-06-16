@@ -1,6 +1,8 @@
-:root {
-    --primary: #C778DD;
-    --gray: #ABB2BF;
-    --background: #282C33;
-    --white: #FFFFFF
+:export {
+  primary-color: #C778DD;
+  gray-color: #ABB2BF;
+  background-color: #282C33;
+  white-color: #FFFFFF;
 }
+
+/*# sourceMappingURL=theme.css.map */

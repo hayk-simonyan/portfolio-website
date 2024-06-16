@@ -4,3 +4,19 @@
     align-items: $align-items;
     gap: $gap;
 }
+
+@mixin flex-column($justify-content: space-between, $align-items: center, $gap: 0) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}
+
+@mixin flex($flex-direction: row, $justify-content: space-between, $align-items: center, $gap: 0) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}

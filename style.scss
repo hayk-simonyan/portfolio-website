@@ -1,3 +1,4 @@
+@use 'theme' as *;
 @use 'mixins';
 
 $desktop-width: 1024px;
@@ -46,17 +47,17 @@ header {
             }
 
             .nav-link {
-                color: var(--gray);
+                color: $gray-color;
                 text-decoration: none;
             }
 
             .nav-link[href="index.html"] {
-                color: var(--white);
+                color: $white-color;
             }
 
             .nav-link::before {
                 content: '#';
-                color: var(--primary);
+                color: $primary-color;
                 margin-right: 1px;
             }
         }
@@ -108,7 +109,7 @@ header {
 }
 
 .hero-content span {
-    color: var(--primary);
+    color: $primary-color;
 }
 
 .hero-content p {
@@ -124,14 +125,14 @@ header {
 .purple-square {
     width: 16px;
     height: 16px;
-    background-color: var(--primary);
+    background-color: $primary-color;
 }
 
 .portfolio-note-wrapper {
     display: flex;
     align-items: center;
     gap: 10px;
-    border: 1px solid var(--gray);
+    border: 1px solid $gray-color;
     padding: 8px;
     width: 402px;
 }
@@ -153,20 +154,20 @@ header {
 }
 
 .portfolio-note span {
-    color: var(--white);
+    color: $white-color;
     font-weight: bold;
 }
 
 /* Quote section */
 .quote {
     text-align: center;
-    border: 1px solid var(--gray);
+    border: 1px solid $gray-color;
     margin: 0 auto;
     position: relative;
 }
 
 .quote blockquote {
-    color: var(--white);
+    color: $white-color;
     font-size: 24px;
     padding: 32px;
     margin: 0;
@@ -176,11 +177,11 @@ header {
 .quote blockquote::after {
     content: '"';
     position: absolute;
-    color: var(--gray);
+    color: $gray-color;
     font-style: italic;
     font-size: 56px;
     font-weight: bold;
-    background-image: linear-gradient(var(--background), var(--background));
+    background-image: linear-gradient($background-color, $background-color);
     background-size: 100% 45%;
     background-repeat: no-repeat;
 }
@@ -197,10 +198,10 @@ header {
 
 .quote figcaption {
     position: absolute;
-    color: var(--gray);
+    color: $gray-color;
     font-size: 24px;
     padding: 16px;
-    border: 1px solid var(--gray);
+    border: 1px solid $gray-color;
     border-top: none;
     right: -1px;
 }
@@ -237,7 +238,7 @@ header {
 .social-links-line {
     width: 1px;
     height: 191px;
-    background-color: var(--gray);
+    background-color: $gray-color;
 }
 
 .social-links ul {
@@ -269,12 +270,12 @@ header {
 
 .section-header h2::before {
     content: "#";
-    color: var(--primary);
+    color: $primary-color;
 }
 
 .section-header h2::after {
     content: "";
-    background-color: var(--primary);
+    background-color: $primary-color;
     width: 500px;
     height: 1px;
     position: absolute;
@@ -290,7 +291,7 @@ header {
 }
 
 .section-header a {
-    color: var(--white);
+    color: $white-color;
     text-decoration: underline;
 }
 
@@ -309,7 +310,7 @@ header {
 
 .project-card,
 .project-card img {
-    border: 1px solid var(--gray);
+    border: 1px solid $gray-color;
 }
 
 .project-card img {
@@ -322,8 +323,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    color: var(--gray);
-    border-bottom: 1px solid var(--gray);
+    color: $gray-color;
+    border-bottom: 1px solid $gray-color;
     margin: 0;
     padding: 8px;
 }
@@ -389,14 +390,14 @@ header {
 }
 
 .skill-category {
-    border: 1px solid var(--gray);
+    border: 1px solid $gray-color;
     max-width: 300px;
     min-width: 200px;
 }
 
 .skill-category h4 {
     padding: 8px;
-    border-bottom: 1px solid var(--gray);
+    border-bottom: 1px solid $gray-color;
     margin: 0;
 }
 
@@ -404,7 +405,7 @@ header {
     padding: 8px;
     display: flex;
     gap: 8px;
-    color: var(--gray);
+    color: $gray-color;
     margin: 0;
     flex-wrap: wrap;
 }
@@ -476,7 +477,7 @@ header {
 }
 
 .contacts-card {
-    border: 1px solid var(--gray);
+    border: 1px solid $gray-color;
     padding: 16px;
 }
 
@@ -487,7 +488,7 @@ header {
 }
 
 .contact {
-    color: var(--gray);
+    color: $gray-color;
     display: flex;
     gap: 9px;
     align-items: center;
@@ -496,7 +497,7 @@ header {
 
 /* Footer */
 footer {
-    border-top: 1px solid var(--gray);
+    border-top: 1px solid $gray-color;
     padding: 32px 0;
     margin-top: 145px;
 }
@@ -550,16 +551,16 @@ footer {
 }
 
 .footer-logo-wrapper a {
-    color: var(--gray);
+    color: $gray-color;
     transition: color 0.5s ease;
 }
 
 .footer-logo-wrapper a:hover {
-    color: var(--white);
+    color: $white-color;
 }
 
 .footer-info p {
-    color: var(--white);
+    color: $white-color;
     margin-top: 16px;
 }
 

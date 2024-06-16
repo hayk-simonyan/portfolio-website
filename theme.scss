@@ -1,0 +1,11 @@
+$primary-color: #C778DD;
+$gray-color: #ABB2BF;
+$background-color: #282C33;
+$white-color: #FFFFFF;
+
+:export {
+    primary-color: $primary-color;
+    gray-color: $gray-color;
+    background-color: $background-color;
+    white-color: $white-color;
+}

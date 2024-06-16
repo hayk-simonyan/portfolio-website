@@ -1,39 +1,66 @@
-body {
-    font-family: "Fira Code", monospace;
-    margin: 0;
-    background-color: var(--background);
+:export {
+  primary-color: #C778DD;
+  gray-color: #ABB2BF;
+  background-color: #282C33;
+  white-color: #FFFFFF;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--white);
+body {
+  font-family: "Fira Code", monospace;
+  margin: 0;
+  background-color: #282C33;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #FFFFFF;
 }
 
 p {
-    color: var(--gray);
+  color: #ABB2BF;
 }
 
 h2 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 button {
-    background-color: transparent;
-    border: 1px solid var(--primary);
-    color: var(--white);
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
+  background-color: transparent;
+  border: 1px solid #C778DD;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button.success {
+  border: 1px solid green;
+}
+button.warning {
+  border: 1px solid orangered;
 }
 
 button:hover {
-    background-color: var(--primary);
+  background-color: #C778DD;
+}
+button:hover.success {
+  background-color: greenyellow;
+}
+button:hover.warning {
+  background-color: orange;
 }
 
 a {
-    color: var(--white);
-    text-decoration: none;
+  color: #FFFFFF;
+  text-decoration: none;
 }
+
+/*# sourceMappingURL=global.css.map */
